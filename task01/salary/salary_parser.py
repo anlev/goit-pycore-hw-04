@@ -8,9 +8,9 @@ def salaries_from_lines(lines) -> list[float]:
             continue
     return salaries
 
-def parse_salaries(path: str) -> list[float]:
+def parse_salaries(path: str, encoding="utf-8") -> list[float]:
     try:
-        with open(path, "r") as file:
+        with open(path, "r", encoding=encoding) as file:
             return salaries_from_lines(file)
     except (FileNotFoundError, OSError):
         return []
