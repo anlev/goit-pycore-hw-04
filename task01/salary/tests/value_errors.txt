@@ -1,0 +1,3 @@
+John,400
+Peter,b
+Kate,3
